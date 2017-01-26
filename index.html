@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ng1 demo project</title>
+    <script src="node_modules/core-js/client/shim.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+
+    <script>
+        System.import('app/main.js');
+    </script>
+
+</head>
+<body >
+    <heros>Loading...</heros>
+    <div ng-controller="MainContoller as ctrl">
+        This first {{ctrl.name}} controller is assigned
+    </div>
+    <div ng-controller="WizardContoller as wizard">
+        {{wizard.middle}} {{wizard.wizard}}
+    </div>
+</body>
+</html>
