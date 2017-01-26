@@ -6,11 +6,13 @@ import IAngularStatic = angular.IAngularStatic;
 
 
 declare const angular:IAngularStatic;
+//declare const $http:ng.IHttpService;
 
 export const wizardModule: IModule = angular
     .module('wizardModule',[])
-    .service('WizardService',[()=>new WizardService()])
-    .controller('WizardContoller', WizardContoller.Dependecies)
+    .service('WizardService', WizardService)
+    .controller('WizardContoller', WizardContoller.Dependencies)
+    //.run(['WizardService',function(WizardService:WizardService){}])
    
     //.service('userProxy',UserProxy)
     //.service('userBl',UserBl);

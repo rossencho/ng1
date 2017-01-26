@@ -2,7 +2,7 @@
 var MainContoller = (function () {
     function MainContoller($scope) {
         this.name = '';
-        this.name = "Rossko";
+        this.name = "Rossen";
     }
     return MainContoller;
 }());
